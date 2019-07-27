@@ -1,4 +1,4 @@
-package com.example.mymovie
+package com.nok.mymovie
 
 import org.junit.Test
 
