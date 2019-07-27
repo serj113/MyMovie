@@ -1,7 +1,7 @@
-package com.example.mymovie.injection.module
+package com.nok.mymovie.injection.module
 
-import com.example.mymovie.api.MoviesApi
-import com.example.mymovie.util.BASE_URL
+import com.nok.mymovie.api.MoviesApi
+import com.nok.mymovie.util.BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.Reusable

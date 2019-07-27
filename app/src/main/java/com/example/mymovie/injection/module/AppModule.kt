@@ -1,7 +1,7 @@
-package com.example.mymovie.injection.module
+package com.nok.mymovie.injection.module
 
 import android.app.Application
-import com.example.mymovie.App
+import com.nok.mymovie.App
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

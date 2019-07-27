@@ -1,4 +1,4 @@
-package com.example.mymovie.base
+package com.nok.mymovie.base
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

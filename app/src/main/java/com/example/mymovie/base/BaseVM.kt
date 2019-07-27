@@ -1,7 +1,7 @@
-package com.example.mymovie.base
+package com.nok.mymovie.base
 
 import androidx.lifecycle.AndroidViewModel
-import com.example.mymovie.App
+import com.nok.mymovie.App
 
 abstract class BaseVM<A: BaseAction>(app: App): AndroidViewModel(app) {
 

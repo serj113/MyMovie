@@ -1,9 +1,9 @@
-package com.example.mymovie
+package com.nok.mymovie
 
 import android.app.Application
-import com.example.mymovie.injection.AppInjector
-import com.example.mymovie.injection.DaggerAppInjector
-import com.example.mymovie.injection.module.ApiModule
+import com.nok.mymovie.injection.AppInjector
+import com.nok.mymovie.injection.DaggerAppInjector
+import com.nok.mymovie.injection.module.ApiModule
 
 class App: Application() {
 

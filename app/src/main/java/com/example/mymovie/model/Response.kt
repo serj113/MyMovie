@@ -1,4 +1,4 @@
-package com.example.mymovie.model
+package com.nok.mymovie.model
 
 data class Response (
     val Status: Int,

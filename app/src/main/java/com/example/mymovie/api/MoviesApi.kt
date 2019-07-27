@@ -1,6 +1,6 @@
-package com.example.mymovie.api
+package com.nok.mymovie.api
 
-import com.example.mymovie.model.Response
+import com.nok.mymovie.model.Response
 import io.reactivex.Observable
 import retrofit2.http.GET
 

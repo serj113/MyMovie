@@ -1,7 +1,7 @@
-package com.example.mymovie.injection
+package com.nok.mymovie.injection
 
-import com.example.mymovie.injection.module.ApiModule
-import com.example.mymovie.injection.module.AppModule
+import com.nok.mymovie.injection.module.ApiModule
+import com.nok.mymovie.injection.module.AppModule
 import dagger.Component
 import javax.inject.Singleton
 

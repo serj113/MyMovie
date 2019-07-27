@@ -1,4 +1,4 @@
-package com.example.mymovie
+package com.nok.mymovie
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

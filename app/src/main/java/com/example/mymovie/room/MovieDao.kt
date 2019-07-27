@@ -1,10 +1,10 @@
-package com.example.mymovie.room
+package com.nok.mymovie.room
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.example.mymovie.model.Movie
+import com.nok.mymovie.model.Movie
 import io.reactivex.Single
 
 @Dao

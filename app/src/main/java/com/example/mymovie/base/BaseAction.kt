@@ -1,6 +1,6 @@
-package com.example.mymovie.base
+package com.nok.mymovie.base
 
-import com.example.mymovie.api.MoviesApi
+import com.nok.mymovie.api.MoviesApi
 import javax.inject.Inject
 
 abstract class BaseAction {

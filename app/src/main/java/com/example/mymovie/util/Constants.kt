@@ -1,4 +1,4 @@
-package com.example.mymovie.util
+package com.nok.mymovie.util
 
 /** The base URL of the API */
 const val BASE_URL: String = "https://api.themoviedb.org/3/"
