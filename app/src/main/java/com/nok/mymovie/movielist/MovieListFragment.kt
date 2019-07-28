@@ -1,6 +1,5 @@
 package com.nok.mymovie.movielist
 
-import android.content.Context
 import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,15 +12,26 @@ import com.nok.mymovie.base.BaseFragment
 
 class MovieListFragment : BaseFragment<MovieListVM>() {
 
-    override val vm: MovieListVM by lazy {
-        ViewModelProviders.of(this).get(MovieListVM::class.java)
-    }
+    private lateinit var vm: MovieListVM
     private var listener: OnFragmentInteractionListener? = null
+
+    override fun initVM() {
+        vm = ViewModelProviders.of(this).get(MovieListVM::class.java)
+    }
+
+    override fun getVM(): MovieListVM {
+        return vm
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View = inflater.inflate(R.layout.fragment_movie_list, container, false)
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        vm.loadData()
+    }
 
     fun onButtonPressed(uri: Uri) {
         listener?.onFragmentInteraction(uri)

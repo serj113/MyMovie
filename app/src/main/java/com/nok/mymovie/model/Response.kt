@@ -1,7 +1,8 @@
 package com.nok.mymovie.model
 
 data class Response (
-    val Status: Int,
-    val Message: String,
-    val Data: List<Movie>
+    val page: Int,
+    val results: List<Movie>,
+    val total_pages: Int,
+    val total_results: Int
 )

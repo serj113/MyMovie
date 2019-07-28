@@ -10,7 +10,7 @@ import io.reactivex.Single
 @Dao
 interface MovieDao {
 
-    @Query("SELECT * FROM contact")
+    @Query("SELECT * FROM movie")
     fun getMovies(): Single<List<Movie>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
