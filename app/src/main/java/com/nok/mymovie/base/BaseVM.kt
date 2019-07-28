@@ -5,12 +5,14 @@ import com.nok.mymovie.App
 
 abstract class BaseVM<A: BaseAction>(app: App): AndroidViewModel(app) {
 
-    var actions: A? = null
+    protected abstract val action: A
 
-    abstract fun initActions()
+    private fun injectAction() {
+        getApplication<App>().getInjector().inject(action)
+    }
 
     init {
-        initActions()
+        injectAction()
     }
 
 }

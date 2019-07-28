@@ -6,6 +6,6 @@ import javax.inject.Inject
 abstract class BaseAction {
 
     @Inject
-    lateinit var API: MoviesApi
+    lateinit var api: MoviesApi
 
 }

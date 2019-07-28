@@ -3,19 +3,25 @@ package com.nok.mymovie.movielist
 import android.content.Context
 import android.net.Uri
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.ViewModelProviders
 import com.nok.mymovie.R
+import com.nok.mymovie.base.BaseFragment
 
 
-class MovieListFragment : Fragment() {
+class MovieListFragment : BaseFragment<MovieListVM>() {
+
+    override val vm: MovieListVM by lazy {
+        ViewModelProviders.of(this).get(MovieListVM::class.java)
+    }
     private var listener: OnFragmentInteractionListener? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ) = inflater.inflate(R.layout.fragment_movie_list, container, false)
+    ): View = inflater.inflate(R.layout.fragment_movie_list, container, false)
 
     fun onButtonPressed(uri: Uri) {
         listener?.onFragmentInteraction(uri)
@@ -26,7 +32,7 @@ class MovieListFragment : Fragment() {
         if (context is OnFragmentInteractionListener) {
             listener = context
         } else {
-            throw RuntimeException(context.toString() + " must implement OnFragmentInteractionListener")
+            throw RuntimeException("$context must implement OnFragmentInteractionListener")
         }
     }
 
