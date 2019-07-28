@@ -27,14 +27,14 @@ class MovieListFragment : BaseFragment<MovieListVM>() {
         listener?.onFragmentInteraction(uri)
     }
 
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-        if (context is OnFragmentInteractionListener) {
-            listener = context
-        } else {
-            throw RuntimeException("$context must implement OnFragmentInteractionListener")
-        }
-    }
+    // override fun onAttach(context: Context) {
+    //     super.onAttach(context)
+    //     if (context is OnFragmentInteractionListener) {
+    //         listener = context
+    //     } else {
+    //         throw RuntimeException("$context must implement OnFragmentInteractionListener")
+    //     }
+    // }
 
     override fun onDetach() {
         super.onDetach()
